@@ -1,0 +1,60 @@
+# -------------------
+# Python
+# -------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+
+# pipenv
+Pipfile.lock
+
+# pyenv
+.python-version
+
+# -------------------
+# Jupyter Notebooks
+# -------------------
+.ipynb_checkpoints/
+
+# -------------------
+# VS Code settings
+# -------------------
+.vscode/
+
+# -------------------
+# OS / Misc
+# -------------------
+.DS_Store
+Thumbs.db
+
+# -------------------
+# Streamlit
+# -------------------
+.streamlit/config.toml
+.streamlit/secrets.toml
+
+# -------------------
+# PostgreSQL or SQLite databases (if exported)
+# -------------------
+*.sqlite3
+*.db
+*.sql
+
+# -------------------
+# Environment variables
+# -------------------
+.env
+*.env
+
+# -------------------
+# Log files
+# -------------------
+*.log
