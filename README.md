@@ -1,85 +1,69 @@
 🚓 SecureCheck: Traffic Stop Analysis
 
-An interactive Streamlit-powered dashboard for analyzing traffic stop data using PostgreSQL and SQL queries.
-The project enables users to explore traffic stop patterns, driver demographics, and enforcement trends with both predefined queries and custom filters.
-
-📂 Project Structure
-├── main.py                        # Streamlit application
-├── requirements.txt               # Python dependencies
-├── cleaned_traffic_stop.csv       # Preprocessed dataset
-├── Mini_project_1(Secure_Check).ipynb  # Jupyter notebook for data preprocessing & analysis
-├── .gitignore                     # Ignored files and folders
+SecureCheck is a Streamlit dashboard that analyzes traffic stop data using PostgreSQL and SQL queries. It helps explore driver demographics, violation patterns, and enforcement trends.
 
 ⚙️ Features
 
 Store and query traffic stop data in PostgreSQL
 
-Execute medium and advanced SQL queries interactively
+Run interactive SQL queries (predefined + custom)
 
-Explore driver demographics, violation patterns, and arrest trends
+Explore demographics, violations, and arrest/search trends
 
-Generate a custom traffic stop summary with user-provided details
+Generate traffic stop summaries with user input
 
-Clean and organized dashboard UI
+📂 Project Files
 
-🛠️ Installation & Setup
-1. Clone the Repository
+main.py → Streamlit app
+
+requirements.txt → Dependencies
+
+cleaned_traffic_stop.csv → Dataset
+
+SecureCheck_min1.ipynb → Preprocessing & analysis notebook
+
+🛠️ Setup
 git clone https://github.com/your-username/SecureCheck.git
 cd SecureCheck
 
-2. Create a Virtual Environment
 python -m venv venv
 source venv/bin/activate   # Mac/Linux
 venv\Scripts\activate      # Windows
 
-3. Install Dependencies
 pip install -r requirements.txt
 
-4. Setup PostgreSQL Database
+Database
 
-Install PostgreSQL and start the server.
+Install PostgreSQL and start server
 
-Create a database named traffic:
+Create database:
 
 CREATE DATABASE traffic;
 
 
-Update the connection string in main.py if needed:
+Update DB URL in main.py if needed:
 
-db_url = "postgresql://<username>:<password>@localhost:5432/traffic"
+postgresql://<username>:<password>@localhost:5432/traffic
 
-5. Run the Application
+Run App
 streamlit run main.py
 
-📊 Example Queries
+📊 Example Insights
 
-The dashboard includes several predefined queries, such as:
+Top vehicles in drug-related stops
 
-Top 10 vehicles involved in drug-related stops
+Age groups with highest arrest rates
 
-Driver age groups with highest arrest rates
+Time of day with most stops
 
-Time of day with most traffic stops
-
-Violations most associated with searches or arrests
-
-Yearly breakdown of arrests by country
+Violations linked to searches/arrests
 
 📑 Dataset
 
-File: cleaned_traffic_stop.csv
-
-Contains preprocessed records of traffic stops, including:
-
-Driver demographics (age, gender, race)
+Driver demographics
 
 Stop details (time, duration, location)
 
-Search and arrest indicators
+Search & arrest indicators
 
 Violation types
-
-📜 License
-
-
-This project is licensed under the MIT License – free to use and modify
